@@ -11,23 +11,28 @@
     <!---Resposive Navbar-->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
     <h1 class="text-2xl">Greenden</h1>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 md:hidden">
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 md:hidden" alt="Menu Icon">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-      
+    </svg>
+  
     <ul class="gap-5 text-gray-700 hidden md:flex">
-        <li>
-            <a class="hover:underline hover:text-green-950" href="index.html">Home</a>
-        </li>
-        <li>
-            <a class="hover:underline hover:text-green-950" href="prod.html">Products</a>
-        </li>
-        <li>
-            <a class="hover:underline hover:text-green-950" href="cont.html">Contact</a>
-        </li>
+        <li><a class="hover:underline hover:text-green-950" href="./index.html">Home</a></li>
+        <li><a class="hover:underline hover:text-green-950" href="./prod.html">Products</a></li>
+        <li><a class="hover:underline hover:text-green-950" href="./cont.html">Contact</a></li>
     </ul>
     </div>
     </nav>
+    <!--Side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width:50%;height:100vh; right:-50%;">
+        <div class="text-right p-5">
+            <p id="closeNav" class="inline cursor-pointer">x</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li><a class="hover:underline hover:text-green-950" href="./index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-green-950" href="./prod.html">Products</a></li>
+            <li><a class="hover:underline hover:text-green-950" href="./cont.html">Contact</a></li>
+        </ul>
+    </section>
     <!--Header Section-->
     <div class="bg-green-100 p-4 md:p-10 flex justify-center">
         <div>
@@ -49,28 +54,24 @@
         <p>For Everyone Who Loves the Serenity of Nature</p>
         <div class="md:flex">
             <div class="border border-black p-2 m-6">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 inline">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
-                  </svg>
-                  
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 md:hidden cursor-pointer" alt="Info Icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                          
                 <h2 class="text-xl font-medium">Large Assortment</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quaerat, nesciunt sint cum ad tempora architecto necessitatibus laudantium aspernatur explicabo, ducimus praesentium accusantium corporis dolor facere ut consectetur. Ducimus, laboriosam.</p>
             </div>
             <div class="border border-black p-2 m-6">
-                <svg id='Delivery_48' width='60' height='60' viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg' class="inline" xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='48' height='48' stroke='none' fill='#000000' opacity='0'/>
-                    <g transform="matrix(0.69 0 0 0.69 24 24)" >
-                    <path style="stroke: none; stroke-width:1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-32, -32)" d="M 3 6 C 1.347656 6 0 7.347656 0 9 C 0 10.300781 0.839844 11.402344 2 11.816406 L 2 40.1875 C 0.839844 40.597656 0 41.699219 0 43 L 0 49 C 0 50.652344 1.347656 52 3 52 L 8.078125 52 C 8.566406 55.386719 11.480469 58 15 58 C 18.519531 58 21.433594 55.386719 21.921875 52 L 44.078125 52 C 44.566406 55.386719 47.480469 58 51 58 C 54.519531 58 57.433594 55.386719 57.921875 52 L 61 52 C 62.652344 52 64 50.652344 64 49 L 64 43 C 64 41.683594 63.144531 40.578125 61.964844 40.171875 C 61.976563 40.117188 62 40.0625 62 40 L 62 36.175781 C 62 35.214844 61.726563 34.277344 61.203125 33.46875 L 54.019531 22.296875 C 53.097656 20.859375 51.527344 20 49.816406 20 L 48 20 L 48 18 C 48 17.449219 47.550781 17 47 17 C 46.449219 17 46 17.449219 46 18 L 46 20 L 42 20 L 42 11.816406 C 43.160156 11.402344 44 10.300781 44 9 C 44 7.347656 42.652344 6 41 6 Z M 3 8 L 41 8 C 41.550781 8 42 8.449219 42 9 C 42 9.550781 41.550781 10 41 10 L 3 10 C 2.449219 10 2 9.550781 2 9 C 2 8.449219 2.449219 8 3 8 Z M 4 12 L 40 12 L 40 40 L 4 40 Z M 22 14 C 15.382813 14 10 19.382813 10 26 C 10 32.617188 15.382813 38 22 38 C 28.617188 38 34 32.617188 34 26 C 34 19.382813 28.617188 14 22 14 Z M 22 16 C 27.515625 16 32 20.484375 32 26 C 32 31.515625 27.515625 36 22 36 C 16.484375 36 12 31.515625 12 26 C 12 20.484375 16.484375 16 22 16 Z M 22 18 C 21.449219 18 21 18.449219 21 19 L 21 25.585938 L 16.292969 30.292969 C 15.902344 30.683594 15.902344 31.316406 16.292969 31.707031 C 16.488281 31.902344 16.742188 32 17 32 C 17.257813 32 17.511719 31.902344 17.707031 31.707031 L 22.707031 26.707031 C 22.800781 26.613281 22.871094 26.503906 22.921875 26.382813 C 22.972656 26.261719 23 26.128906 23 26 L 23 19 C 23 18.449219 22.550781 18 22 18 Z M 42 22 L 49.816406 22 C 50.839844 22 51.785156 22.515625 52.339844 23.375 L 59.523438 34.550781 C 59.835938 35.039063 60 35.601563 60 36.175781 L 60 40 L 42 40 Z M 46 24 C 44.898438 24 44 24.898438 44 26 L 44 32 C 44 33.101563 44.898438 34 46 34 L 53.195313 34 C 53.921875 34 54.59375 33.605469 54.945313 32.96875 C 55.296875 32.335938 55.277344 31.558594 54.890625 30.941406 L 51.140625 24.9375 C 50.773438 24.351563 50.136719 24 49.445313 24 Z M 46 26 L 49.445313 26 L 53.203125 32 L 46 32 Z M 45 36 C 44.449219 36 44 36.449219 44 37 C 44 37.550781 44.449219 38 45 38 L 47 38 C 47.550781 38 48 37.550781 48 37 C 48 36.449219 47.550781 36 47 36 Z M 3 42 L 61 42 C 61.550781 42 62 42.449219 62 43 L 62 49 C 62 49.550781 61.550781 50 61 50 L 57.921875 50 C 57.433594 46.613281 54.519531 44 51 44 C 47.480469 44 44.566406 46.613281 44.078125 50 L 21.921875 50 C 21.433594 46.613281 18.519531 44 15 44 C 11.480469 44 8.566406 46.613281 8.078125 50 L 3 50 C 2.449219 50 2 49.550781 2 49 L 2 48 C 2.550781 48 3 47.550781 3 47 L 3 45 C 3 44.449219 2.550781 44 2 44 L 2 43 C 2 42.449219 2.449219 42 3 42 Z M 7 44 C 6.449219 44 6 44.449219 6 45 L 6 47 C 6 47.550781 6.449219 48 7 48 C 7.550781 48 8 47.550781 8 47 L 8 45 C 8 44.449219 7.550781 44 7 44 Z M 23 44 C 22.449219 44 22 44.449219 22 45 L 22 47 C 22 47.550781 22.449219 48 23 48 C 23.550781 48 24 47.550781 24 47 L 24 45 C 24 44.449219 23.550781 44 23 44 Z M 28 44 C 27.449219 44 27 44.449219 27 45 L 27 47 C 27 47.550781 27.449219 48 28 48 C 28.550781 48 29 47.550781 29 47 L 29 45 C 29 44.449219 28.550781 44 28 44 Z M 33 44 C 32.449219 44 32 44.449219 32 45 L 32 47 C 32 47.550781 32.449219 48 33 48 C 33.550781 48 34 47.550781 34 47 L 34 45 C 34 44.449219 33.550781 44 33 44 Z M 38 44 C 37.449219 44 37 44.449219 37 45 L 37 47 C 37 47.550781 37.449219 48 38 48 C 38.550781 48 39 47.550781 39 47 L 39 45 C 39 44.449219 38.550781 44 38 44 Z M 43 44 C 42.449219 44 42 44.449219 42 45 L 42 47 C 42 47.550781 42.449219 48 43 48 C 43.550781 48 44 47.550781 44 47 L 44 45 C 44 44.449219 43.550781 44 43 44 Z M 59 44 C 58.449219 44 58 44.449219 58 45 L 58 47 C 58 47.550781 58.449219 48 59 48 C 59.550781 48 60 47.550781 60 47 L 60 45 C 60 44.449219 59.550781 44 59 44 Z M 15 46 C 17.757813 46 20 48.242188 20 51 C 20 53.757813 17.757813 56 15 56 C 12.242188 56 10 53.757813 10 51 C 10 48.242188 12.242188 46 15 46 Z M 51 46 C 53.757813 46 56 48.242188 56 51 C 56 53.757813 53.757813 56 51 56 C 48.242188 56 46 53.757813 46 51 C 46 48.242188 48.242188 46 51 46 Z M 15 49 C 13.894531 49 13 49.894531 13 51 C 13 52.105469 13.894531 53 15 53 C 16.105469 53 17 52.105469 17 51 C 17 49.894531 16.105469 49 15 49 Z M 51 49 C 49.894531 49 49 49.894531 49 51 C 49 52.105469 49.894531 53 51 53 C 52.105469 53 53 52.105469 53 51 C 53 49.894531 52.105469 49 51 49 Z" stroke-linecap="round" />
-                    </g>
-                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 md:hidden cursor-pointer" alt="Info Icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
                 <h2 class="text-xl font-medium">Free and fast shipping</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia architecto exercitationem quos, placeat eius illo odit dolorem quisquam ducimus ad quasi esse, deserunt voluptas sed impedit sit facilis suscipit autem.</p>
             </div>
             <div class="border border-black p-2 m-6">
-                <svg id='Online_Support_48' width='60' height='60' class="inline" viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='48' height='48' stroke='none' fill='#000000' opacity='0'/>
-                    <g transform="matrix(0.71 0 0 0.71 24 24)" >
-                    <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-32, -31)" d="M 31 0 C 18.652344 0 8.550781 9.78125 8.023438 22 L 7 22 C 4.242188 22 2 24.242188 2 27 L 2 41 C 2 43.757813 4.242188 46 7 46 L 10.183594 46 C 10.597656 47.160156 11.699219 48 13 48 C 14.652344 48 16 46.652344 16 45 L 16 23 C 16 21.347656 14.652344 20 13 20 C 11.699219 20 10.597656 20.839844 10.183594 22 L 10.050781 22 C 10.265625 17.515625 11.875 13.402344 14.476563 10.082031 L 19.003906 14.527344 C 19.785156 15.292969 20.800781 15.683594 21.8125 15.683594 C 22.703125 15.683594 23.59375 15.382813 24.328125 14.773438 C 26.472656 12.984375 29.199219 12 32 12 C 34.789063 12 37.507813 12.980469 39.652344 14.757813 C 41.222656 16.058594 43.511719 15.945313 44.980469 14.496094 L 49.488281 10.039063 C 52.109375 13.367188 53.734375 17.496094 53.949219 22 L 53.8125 22 C 53.402344 20.835938 52.300781 20 51 20 C 49.34375 20 48 21.34375 48 23 L 48 45 C 48 46.652344 49.34375 48 51 48 C 52.300781 48 53.402344 47.160156 53.8125 46 L 55 46 L 55 48 C 55 52.960938 50.964844 57 46 57 L 39.859375 57 C 39.410156 55.277344 37.859375 54 36 54 L 34 54 C 31.792969 54 30 55.792969 30 58 C 30 60.203125 31.792969 62 34 62 L 36 62 C 37.859375 62 39.410156 60.71875 39.859375 59 L 46 59 C 52.066406 59 57 54.0625 57 48 L 57 46 C 59.757813 46 62 43.753906 62 41 L 62 27 C 62 24.242188 59.757813 22 57 22 L 55.972656 22 C 55.449219 9.78125 45.347656 0 33 0 Z M 31 2 L 33 2 C 38.96875 2 44.351563 4.515625 48.175781 8.523438 L 43.574219 13.074219 C 42.839844 13.800781 41.703125 13.855469 40.925781 13.21875 C 38.425781 11.144531 35.257813 10 32 10 C 28.734375 10 25.554688 11.148438 23.046875 13.234375 C 22.277344 13.875 21.140625 13.820313 20.40625 13.097656 L 15.785156 8.566406 C 19.613281 4.53125 25.011719 2 31 2 Z M 32 4 C 31.445313 4 31 4.445313 31 5 L 31 7 C 31 7.554688 31.445313 8 32 8 C 32.554688 8 33 7.554688 33 7 L 33 5 C 33 4.445313 32.554688 4 32 4 Z M 37.425781 4.742188 C 37.042969 4.792969 36.707031 5.070313 36.597656 5.472656 L 36.078125 7.40625 C 35.9375 7.9375 36.253906 8.488281 36.785156 8.632813 C 36.875 8.652344 36.960938 8.664063 37.046875 8.664063 C 37.488281 8.664063 37.894531 8.371094 38.015625 7.921875 L 38.53125 5.992188 C 38.675781 5.457031 38.355469 4.910156 37.824219 4.765625 C 37.691406 4.730469 37.554688 4.722656 37.425781 4.742188 Z M 26.574219 4.742188 C 26.445313 4.722656 26.308594 4.730469 26.175781 4.765625 C 25.644531 4.910156 25.324219 5.457031 25.46875 5.992188 L 25.984375 7.921875 C 26.105469 8.371094 26.507813 8.664063 26.953125 8.664063 C 27.039063 8.664063 27.125 8.652344 27.214844 8.632813 C 27.746094 8.488281 28.0625 7.941406 27.921875 7.40625 L 27.402344 5.476563 C 27.292969 5.074219 26.957031 4.796875 26.574219 4.742188 Z M 21.125 6.886719 C 20.996094 6.902344 20.867188 6.945313 20.75 7.015625 C 20.269531 7.292969 20.109375 7.902344 20.386719 8.382813 L 21.386719 10.109375 C 21.570313 10.433594 21.90625 10.609375 22.25 10.609375 C 22.421875 10.609375 22.59375 10.570313 22.75 10.480469 C 23.230469 10.203125 23.390625 9.589844 23.113281 9.109375 L 22.113281 7.382813 C 21.910156 7.023438 21.511719 6.839844 21.125 6.886719 Z M 42.875 6.890625 C 42.484375 6.839844 42.089844 7.023438 41.886719 7.382813 L 40.886719 9.113281 C 40.609375 9.589844 40.769531 10.203125 41.25 10.480469 C 41.40625 10.570313 41.578125 10.613281 41.75 10.613281 C 42.09375 10.613281 42.429688 10.433594 42.613281 10.113281 L 43.613281 8.382813 C 43.890625 7.902344 43.726563 7.292969 43.25 7.015625 C 43.128906 6.945313 43.003906 6.90625 42.875 6.890625 Z M 13 22 C 13.550781 22 14 22.449219 14 23 L 14 45 C 14 45.550781 13.550781 46 13 46 C 12.449219 46 12 45.550781 12 45 L 12 23 C 12 22.449219 12.449219 22 13 22 Z M 51 22 C 51.550781 22 52 22.449219 52 23 L 52 45 C 52 45.550781 51.550781 46 51 46 C 50.449219 46 50 45.550781 50 45 L 50 23 C 50 22.449219 50.449219 22 51 22 Z M 7 24 L 10 24 L 10 44 L 7 44 C 5.347656 44 4 42.652344 4 41 L 4 27 C 4 25.347656 5.347656 24 7 24 Z M 54 24 L 57 24 C 58.652344 24 60 25.347656 60 27 L 60 41 C 60 42.652344 58.652344 44 57 44 L 54 44 Z M 34 56 L 36 56 C 37.101563 56 38 56.898438 38 58 C 38 59.101563 37.101563 60 36 60 L 34 60 C 32.898438 60 32 59.101563 32 58 C 32 56.898438 32.898438 56 34 56 Z" stroke-linecap="round" />
-                    </g>
-                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 md:hidden cursor-pointer" alt="Info Icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
                 <h2 class="text-xl font-medium">24-7 support</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, facere similique qui eaque neque dolorum quidem accusantium obcaecati eos sapiente quibusdam rerum perferendis consequatur quisquam modi magnam beatae corporis quaerat!</p>
             </div>
@@ -82,7 +83,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 mt-2 gap-5">
             <div>
                 <img src="./images/bs_1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="bs">
-                <h1>$20</h1>
+                <h1>$10</h1>
             </div>
             <div>
                 <img src="./images/bs_2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="bs">
@@ -122,10 +123,12 @@
         <button class="bg-black text-white mt-3 mb-2 p-2 hover:underline">Susbcribe</button>
     </div>
     <!--Footer-->
-<div class="bg-green-100 p-10 flex flex-col gap-5">
-    <h1 class="text-3xl">Greenden</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam esse ducimus et iste consectetur!</p>
-    <p>@2024 Greenden.com</p>
-</div>
+    <div class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-3xl">Greenden</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam esse ducimus et iste consectetur!</p>
+        <p>@2024 Greenden.com</p>
+    </div>
+    <script src="myscript.js"></script> 
+
 </body>
 </html>
